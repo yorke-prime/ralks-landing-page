@@ -185,6 +185,7 @@ header {
   margin-top: 10px;
   font-size: 12px;
   color: rgb(83, 81, 81);
+  margin-bottom: 80px;
 }
 
 .servicos {
@@ -203,11 +204,10 @@ header {
   align-items: center;
   height: 200px;
   border: 1px solid #ddd;
-  transition: 0.5s;
+  transition: box-shadow 0.5s;
 }
 
 .servico:hover {
-  transform: translateY(-2.1rem);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
   cursor: pointer;
   color: #4586FF;
@@ -233,16 +233,90 @@ header {
 .recurso {
   display: flex;
   width: 100%;
+  margin-top: 0px;
+  overflow: hidden;
 }
 
 .recurso .image {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recurso .image img {
-  width: 100%;
+  width: 80%;
 }
 
 .recurso .content {
-  
+  width: 50%;
+}
+
+.recurso .content h3 {
+  margin-top: 80px;
+  font-size: 30px;
+  color:#4586FF;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recurso .content p {
+  width: 80%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recurso .content-inverse {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.recurso .content-inverse h3 {
+  margin-top: 80px;
+  font-size: 30px;
+  color:#4586FF;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: end;
+}
+
+.recurso .content-inverse p {
+  width: 80%;
+  text-align: end;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Rodape */
+.rodape {
+  min-height: 30vh;
+  background-color: #4586FF;
+  padding: 80px 30px 30px 30px;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-start;
+}
+.category p {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.category ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.category ul li a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.category ul li a:hover {
+  color: #14014E;
 }
